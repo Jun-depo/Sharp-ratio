@@ -8,6 +8,7 @@ Risk-free rate equals to 1-year treasury rate of the year.
 
 DSR (daily sharpe ratio)
 DSR =  stock['Daily Return'].mean() / stock['Daily Return'].std()
+
 DSR doesn't contain 1-year treasury rate adjustment
 
 ASR (annual sharp ratio) =  sqrt(252) * stock['Daily Return'].mean() - (1-year treasury rate) / stock['Daily Return'].std()
