@@ -15,7 +15,7 @@ ASR (annual sharp ratio) =  sqrt(252) * stock['Daily Return'].mean() - (1-year t
 
 252 is used as there are 252 trading days per year
  
-Initially, 20 stocks selected from QQQ will be analyzed over 11 year period (2007-01-01 to 2018-01-01).   Each stock have 
+Initially, 20 stocks selected from QQQ will be analyzed over 11 year period (2007-01-01 to 2018-01-01).   Each stock will have 
 11 sharp ratio numbers corresponding to 11 year data.  Each SAR will be paired with the next year ASR of the same stock, then 
 analyzed for their correlation (more detail description will be provided).  Each stock will have 10 pairs. There will be 
 total 200 pairs. 
