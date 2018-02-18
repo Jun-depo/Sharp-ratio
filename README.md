@@ -1,7 +1,7 @@
 # Sharp Ration Correlation study
 
-The project tries to address whether Sharp-ratio derived from given stocks of one year can be used to predict stock 
-sharp-rate of the next year .  
+The project tries to address whether Sharp ratio derived from given stocks of one year can be used to predict stock 
+sharp ratio of the next year .  
 
 Sharpe ratio = (Mean portfolio return − Risk-free rate)/Standard deviation of portfolio return. 
 Risk-free rate equals to 1-year treasury rate of the year.
