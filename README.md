@@ -1,4 +1,4 @@
-# Sharp Ration Correlation study
+# Sharp Ratio Correlation study
 
 The project tries to address whether Sharp ratio derived from given stocks of one year can be used to predict stock 
 sharp ratio of the next year .  
