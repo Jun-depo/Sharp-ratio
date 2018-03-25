@@ -1,26 +1,23 @@
-# Sharp Ratio Correlation study
+# Sharp Ratio study
 
-The project tries to address whether Sharp ratio derived from given stocks of one year can be used to predict stock 
-sharp ratio of the next year .  
+Sharp Ratio is defined as stock gain normalized with stock volatility. People use Sharp Ratio to select stocks have high gains, but low  volatility. 
+
+The project tries to address whether Sharp ratio calculated from 6 years of data can be used to predict stock performance in the following 5 years based on the sharp ratio.  
 
 Sharpe ratio = (Mean portfolio return − Risk-free rate)/Standard deviation of portfolio return. 
-Risk-free rate equals to 1-year treasury rate of the year.
+Risk-free rate equals to 1-year treasury rate of the year, which has been almost zero during last 10 years. It is set to zero in this study.  
 
 DSR (daily sharpe ratio)
 DSR =  stock['Daily Return'].mean() / stock['Daily Return'].std()
 
-DSR doesn't contain 1-year treasury rate adjustment
-
 ASR (annual sharp ratio) =  sqrt(252) * stock['Daily Return'].mean() - (1-year treasury rate) / stock['Daily Return'].std()
 
-252 is used as there are 252 trading days per year
+252 is used as there are 252 trading days per year. 1-year treasury rate is set to zero.  
  
-Initially, 20 stocks selected from QQQ will be analyzed over 11 year period (2007-01-01 to 2018-01-01).   Each stock will have 
-11 sharp ratio numbers corresponding to 11 year data.  Each SAR will be paired with the next year ASR of the same stock, then 
-analyzed for their correlation (more detail description will be provided).  Each stock will have 10 pairs. There will be 
-total 200 pairs. 
+18 stocks were selected from QQQ index (Nasdaq 100 index) and analyzed over 11 year period (2007-01-01 to 2017-12-31).   Each
+stock will have 11 sharp ratio numbers corresponding to each of 11 years. Based on average ASR from the first 6 years, I 
+created two groups, one has low average ASR (0.260) and the other has high average ASR (0.894).  Then, I calculated average 
+ASR of the same two groups.  Average ASRs of two groups showed very little different (0.998 vs 0.950, p = 0.777).  This suggests ASR is not good for predicting future ASR. 
 
-I will also use normalized sharp ratio (ASR offset by QQQ ASR or SPY ASR) to eliminate general stock market up and down.
-
-Eventually, I will expand the analysis to more stocks.   
+I will expand the analysis to study more stocks.    
 
