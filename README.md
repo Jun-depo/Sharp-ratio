@@ -10,6 +10,7 @@ Risk-free rate equals to 1-year treasury rate of the year, which has been almost
 
 DSR (daily sharpe ratio)
 DSR =  Average stock['Daily Return'] / standard deviation of stock['Daily Return']
+stock['Daily Return'] is defined as daily stock price minus the previous day price.  
 
 ASR (annual sharp ratio) =  sqrt(252) * DSR 
 
