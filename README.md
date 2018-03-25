@@ -5,6 +5,7 @@ Sharp Ratio is defined as stock gain normalized with stock volatility. People us
 The project tries to address whether Sharp ratio calculated from 6 years of data can be used to predict stock performance in the following 5 years based on the sharp ratio.  
 
 Sharpe ratio = (Mean portfolio return − Risk-free rate)/Standard deviation of portfolio return. 
+
 Risk-free rate equals to 1-year treasury rate of the year, which has been almost zero during last 10 years. It is set to zero in this study.  
 
 DSR (daily sharpe ratio)
